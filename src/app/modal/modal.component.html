@@ -1,0 +1,18 @@
+<div class="container">
+    <p>Do y wanna continue?</p>
+    <div class="row">
+        <div class="col-md-4">
+            errorCode:
+            <br /> {{data.code}}
+        </div>
+
+        <div class="col-md-8">
+            errorMessage<br />
+            <p>{{data.message}}</p>
+        </div>
+    </div>
+
+    <button class="btn btn-primary" [mat-dialog-close]="data.code">Save</button> &nbsp;&nbsp;
+    <button class="btn btn-primary" [mat-dialog-close]="close">Cancel</button>
+
+</div>
